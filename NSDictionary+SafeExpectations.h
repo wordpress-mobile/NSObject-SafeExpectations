@@ -8,6 +8,9 @@
 
 #import "NSObject+SafeExpectations.h"
 
+/**
+ Additions to NSDictionary
+ */
 @interface NSDictionary (SafeExpectations)
 
 /**
