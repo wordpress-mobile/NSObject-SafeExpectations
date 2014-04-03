@@ -11,22 +11,22 @@
 
 @implementation NSDictionary (SafeExpectations)
 
-- (NSString *)stringForKey:(id)key {
+- (NSString *)se_stringForKey:(id)key {
     id obj = [self safeObjectForKey:key];
     return [NSString se_stringWithObject:obj];
 }
 
-- (NSNumber *)numberForKey:(id)key {
+- (NSNumber *)se_numberForKey:(id)key {
     id obj = [self safeObjectForKey:key];
     return [NSNumber se_numberWithObject:obj];
 }
 
-- (NSArray *)arrayForKey:(id)key {
+- (NSArray *)se_arrayForKey:(id)key {
     id obj = [self safeObjectForKey:key];
     return [NSArray se_arrayWithObject:obj];
 }
 
-- (NSDictionary *)dictionaryForKey:(id)key {
+- (NSDictionary *)se_dictionaryForKey:(id)key {
     id obj = [self safeObjectForKey:key];
     return [NSDictionary se_dictionaryWithObject:obj];
 }
@@ -36,7 +36,7 @@
     return [self objectForKey:key];
 }
 
-- (id)objectForKeyPath:(NSString *)keyPath {
+- (id)se_objectForKeyPath:(NSString *)keyPath {
     id object = self;
     NSArray *keyPaths = [keyPath componentsSeparatedByString:@"."];
     for (NSString *currentKeyPath in keyPaths) {
@@ -51,24 +51,24 @@
     return object;
 }
 
-- (NSString *)stringForKeyPath:(id)keyPath {
-    id obj = [self objectForKeyPath:keyPath];
+- (NSString *)se_stringForKeyPath:(id)keyPath {
+    id obj = [self se_objectForKeyPath:keyPath];
     return [NSString se_stringWithObject:obj];
 
 }
 
-- (NSNumber *)numberForKeyPath:(id)keyPath {
-    id obj = [self objectForKeyPath:keyPath];
+- (NSNumber *)se_numberForKeyPath:(id)keyPath {
+    id obj = [self se_objectForKeyPath:keyPath];
     return [NSNumber se_numberWithObject:obj];
 }
 
-- (NSArray *)arrayForKeyPath:(id)keyPath {
-    id obj = [self objectForKeyPath:keyPath];
+- (NSArray *)se_arrayForKeyPath:(id)keyPath {
+    id obj = [self se_objectForKeyPath:keyPath];
     return [NSArray se_arrayWithObject:obj];
 }
 
-- (NSDictionary *)dictionaryForKeyPath:(id)keyPath {
-    id obj = [self objectForKeyPath:keyPath];
+- (NSDictionary *)se_dictionaryForKeyPath:(id)keyPath {
+    id obj = [self se_objectForKeyPath:keyPath];
     return [NSDictionary se_dictionaryWithObject:obj];
 }
 
