@@ -85,6 +85,12 @@
  */
 - (NSDictionary *)dictionaryForKeyPath:(id)keyPath;
 
+/**
+ Returns the passed object if it's a dictionary
+
+ @param obj the object to return
+ @return obj if it's a dictionary, otherwise it return nil
+ */
 + (instancetype)se_dictionaryWithObject:obj;
 
 @end
