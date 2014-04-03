@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		E12B5DCD18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */; };
 		E12B5DCE18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */; };
-		E12B5DD018EDA5E700B8E15B /* NSObject+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */; };
-		E12B5DD118EDAA3200B8E15B /* NSObject+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */; };
+		E12B5DD418EDB0AC00B8E15B /* NSString+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DD318EDB0AC00B8E15B /* NSString+SafeExpectations.m */; };
+		E12B5DD518EDB0AC00B8E15B /* NSString+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DD318EDB0AC00B8E15B /* NSString+SafeExpectations.m */; };
+		E12B5DD818EDB0BF00B8E15B /* NSNumber+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DD718EDB0BF00B8E15B /* NSNumber+SafeExpectations.m */; };
+		E12B5DD918EDB0BF00B8E15B /* NSNumber+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DD718EDB0BF00B8E15B /* NSNumber+SafeExpectations.m */; };
+		E12B5DDC18EDB0C900B8E15B /* NSArray+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DDB18EDB0C900B8E15B /* NSArray+SafeExpectations.m */; };
+		E12B5DDD18EDB0C900B8E15B /* NSArray+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DDB18EDB0C900B8E15B /* NSArray+SafeExpectations.m */; };
 		E138A2E216C2A4F50038F6AD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1420E6C16C286E9008F1AB0 /* SenTestingKit.framework */; };
 		E138A2E416C2A4F50038F6AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E138A2E316C2A4F50038F6AD /* Cocoa.framework */; };
 		E138A2F116C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E138A2F016C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m */; };
@@ -24,7 +28,12 @@
 
 /* Begin PBXFileReference section */
 		E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_SafeExpectations_Test.m; sourceTree = "<group>"; };
-		E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeExpectations.m"; sourceTree = "<group>"; };
+		E12B5DD218EDB0AC00B8E15B /* NSString+SafeExpectations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SafeExpectations.h"; path = "../NSString+SafeExpectations.h"; sourceTree = "<group>"; };
+		E12B5DD318EDB0AC00B8E15B /* NSString+SafeExpectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SafeExpectations.m"; path = "../NSString+SafeExpectations.m"; sourceTree = "<group>"; };
+		E12B5DD618EDB0BF00B8E15B /* NSNumber+SafeExpectations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+SafeExpectations.h"; path = "../NSNumber+SafeExpectations.h"; sourceTree = "<group>"; };
+		E12B5DD718EDB0BF00B8E15B /* NSNumber+SafeExpectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+SafeExpectations.m"; path = "../NSNumber+SafeExpectations.m"; sourceTree = "<group>"; };
+		E12B5DDA18EDB0C900B8E15B /* NSArray+SafeExpectations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+SafeExpectations.h"; path = "../NSArray+SafeExpectations.h"; sourceTree = "<group>"; };
+		E12B5DDB18EDB0C900B8E15B /* NSArray+SafeExpectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SafeExpectations.m"; path = "../NSArray+SafeExpectations.m"; sourceTree = "<group>"; };
 		E138A2E116C2A4F50038F6AD /* NSObject+SafeExpectationsTest_OSX.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSObject+SafeExpectationsTest_OSX.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E138A2E316C2A4F50038F6AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E138A2E616C2A4F50038F6AD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -95,7 +104,12 @@
 		E1420E5D16C28672008F1AB0 = {
 			isa = PBXGroup;
 			children = (
-				E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */,
+				E12B5DD618EDB0BF00B8E15B /* NSNumber+SafeExpectations.h */,
+				E12B5DD718EDB0BF00B8E15B /* NSNumber+SafeExpectations.m */,
+				E12B5DDA18EDB0C900B8E15B /* NSArray+SafeExpectations.h */,
+				E12B5DDB18EDB0C900B8E15B /* NSArray+SafeExpectations.m */,
+				E12B5DD218EDB0AC00B8E15B /* NSString+SafeExpectations.h */,
+				E12B5DD318EDB0AC00B8E15B /* NSString+SafeExpectations.m */,
 				E1420E8216C29DC8008F1AB0 /* NSObject+SafeExpectations.h */,
 				E1420E7F16C295F8008F1AB0 /* NSDictionary+SafeExpectations.h */,
 				E1420E8016C295F8008F1AB0 /* NSDictionary+SafeExpectations.m */,
@@ -244,9 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E138A2F116C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */,
+				E12B5DD918EDB0BF00B8E15B /* NSNumber+SafeExpectations.m in Sources */,
 				E138A2F716C2A5BB0038F6AD /* NSDictionary+SafeExpectations.m in Sources */,
+				E12B5DDD18EDB0C900B8E15B /* NSArray+SafeExpectations.m in Sources */,
 				E12B5DCE18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */,
-				E12B5DD118EDAA3200B8E15B /* NSObject+SafeExpectations.m in Sources */,
+				E12B5DD518EDB0AC00B8E15B /* NSString+SafeExpectations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1420E8116C295F8008F1AB0 /* NSDictionary+SafeExpectations.m in Sources */,
+				E12B5DD818EDB0BF00B8E15B /* NSNumber+SafeExpectations.m in Sources */,
 				E138A2F916C2AE690038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */,
+				E12B5DDC18EDB0C900B8E15B /* NSArray+SafeExpectations.m in Sources */,
 				E12B5DCD18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */,
-				E12B5DD018EDA5E700B8E15B /* NSObject+SafeExpectations.m in Sources */,
+				E12B5DD418EDB0AC00B8E15B /* NSString+SafeExpectations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
