@@ -31,18 +31,14 @@
 
 - (void)testDictionary
 {
-    NSDictionary *dict = @{
-                           @"string": @"test string",
-                           @"numString": @"123",
-                           @"doubleString": @"123.456789012345",
-                           @"num": @123,
-                           @"array": @[@1,@2,@3],
-                           @"dict": @{@"test1": @100, @"test2": @200}
-                           };
-
+    NSDictionary *dict = [self sampleDictionary];
     STAssertNil([dict stringForKey:@"undefined"], nil);
+}
 
-    // stringForKey:
+- (void)testDictionaryStringForKey
+{
+    NSDictionary *dict = [self sampleDictionary];
+
     STAssertNotNil([dict stringForKey:@"string"], nil);
     STAssertNotNil([dict stringForKey:@"numString"], nil);
     STAssertNotNil([dict stringForKey:@"num"], nil);
@@ -52,8 +48,12 @@
     STAssertEqualObjects([dict stringForKey:@"string"], @"test string", nil);
     STAssertEqualObjects([dict stringForKey:@"numString"], @"123", nil);
     STAssertEqualObjects([dict stringForKey:@"num"], @"123", nil);
+}
 
-    // numberForKey:
+- (void)testDictionaryNumberForKey
+{
+    NSDictionary *dict = [self sampleDictionary];
+
     STAssertNil([dict numberForKey:@"string"], nil);
     STAssertNotNil([dict numberForKey:@"numString"], nil);
     STAssertNotNil([dict numberForKey:@"doubleString"], nil);
@@ -64,8 +64,12 @@
     STAssertEqualObjects([dict numberForKey:@"numString"], @123, nil);
     STAssertEqualObjects([dict numberForKey:@"doubleString"], @123.456789012345, nil);
     STAssertEqualObjects([dict numberForKey:@"num"], @123, nil);
+}
 
-    // arrayForKey:
+- (void)testDictionaryArrayForKey
+{
+    NSDictionary *dict = [self sampleDictionary];
+
     STAssertNil([dict arrayForKey:@"string"], nil);
     STAssertNil([dict arrayForKey:@"numString"], nil);
     STAssertNil([dict arrayForKey:@"doubleString"], nil);
@@ -73,8 +77,12 @@
     STAssertNotNil([dict arrayForKey:@"array"], nil);
     STAssertNil([dict arrayForKey:@"dict"], nil);
     STAssertEquals([[dict arrayForKey:@"array"] count], (NSUInteger)3, nil);
+}
 
-    // dictionaryForKey:
+- (void)testDictionaryDictionaryForKey
+{
+    NSDictionary *dict = [self sampleDictionary];
+
     STAssertNil([dict dictionaryForKey:@"string"], nil);
     STAssertNil([dict dictionaryForKey:@"numString"], nil);
     STAssertNil([dict dictionaryForKey:@"doubleString"], nil);
@@ -84,39 +92,21 @@
     STAssertEquals([[dict dictionaryForKey:@"dict"] count], (NSUInteger)2, nil);
 }
 
-- (void)testDictionaryKeyPath
+- (void)testDictionaryObjectForKeyPath
 {
-    NSDictionary *dict = @{@"level1": @{
-                                   @"level2": @{
-                                           @"string": @"test string",
-                                           @"numString": @"123",
-                                           @"doubleString": @"123.456789012345",
-                                           @"num": @123,
-                                           @"array": @[@1,@2,@3],
-                                           @"dict": @{@"test1": @100, @"test2": @200}
-                                           },
-                                   @"string": @"test string",
-                                   @"doubleString": @"123.456789012345",
-                                   @"numString": @"123",
-                                   @"num": @123,
-                                   @"array": @[@1,@2,@3],
-                                   @"dict": @{@"test1": @100, @"test2": @200}
-                                   },
-                           @"string": @"test string",
-                           @"doubleString": @"123.456789012345",
-                           @"numString": @"123",
-                           @"num": @123,
-                           @"array": @[@1,@2,@3],
-                           @"dict": @{@"test1": @100, @"test2": @200}
-                           };
+    NSDictionary *dict = [self sampleDictionaryForKeyPath];
 
     STAssertNotNil([dict objectForKeyPath:@"level1"], nil);
     STAssertNotNil([dict objectForKeyPath:@"level1.level2"], nil);
     STAssertNotNil([dict objectForKeyPath:@"level1.level2.string"], nil);
     STAssertNil([dict objectForKeyPath:@"level1.level2.level3"], nil);
     STAssertNil([dict objectForKeyPath:@"level1.level2.string.missing"], nil);
+}
 
-    // stringForKeyPath:
+- (void)testDictionaryStringForKeyPath
+{
+    NSDictionary *dict = [self sampleDictionaryForKeyPath];
+
     STAssertNotNil([dict stringForKeyPath:@"level1.string"], nil);
     STAssertNotNil([dict stringForKeyPath:@"level1.numString"], nil);
     STAssertNotNil([dict stringForKeyPath:@"level1.num"], nil);
@@ -126,8 +116,12 @@
     STAssertEqualObjects([dict stringForKeyPath:@"level1.string"], @"test string", nil);
     STAssertEqualObjects([dict stringForKeyPath:@"level1.numString"], @"123", nil);
     STAssertEqualObjects([dict stringForKeyPath:@"level1.num"], @"123", nil);
+}
 
-    // numberForKeyPath:
+- (void)testDictionaryNumberForKeyPath
+{
+    NSDictionary *dict = [self sampleDictionaryForKeyPath];
+
     STAssertNil([dict numberForKeyPath:@"level1.string"], nil);
     STAssertNotNil([dict numberForKeyPath:@"level1.numString"], nil);
     STAssertNotNil([dict numberForKeyPath:@"level1.doubleString"], nil);
@@ -138,8 +132,12 @@
     STAssertEqualObjects([dict numberForKeyPath:@"level1.numString"], @123, nil);
     STAssertEqualObjects([dict numberForKeyPath:@"level1.doubleString"], @123.456789012345, nil);
     STAssertEqualObjects([dict numberForKeyPath:@"level1.num"], @123, nil);
+}
 
-    // arrayForKeyPath:
+- (void)testDictionaryArrayForKeyPath
+{
+    NSDictionary *dict = [self sampleDictionaryForKeyPath];
+
     STAssertNil([dict arrayForKeyPath:@"level1.string"], nil);
     STAssertNil([dict arrayForKeyPath:@"level1.numString"], nil);
     STAssertNil([dict arrayForKeyPath:@"level1.doubleString"], nil);
@@ -147,8 +145,12 @@
     STAssertNotNil([dict arrayForKeyPath:@"level1.array"], nil);
     STAssertNil([dict arrayForKeyPath:@"level1.dict"], nil);
     STAssertEquals([[dict arrayForKeyPath:@"level1.array"] count], (NSUInteger)3, nil);
+}
 
-    // dictionaryForKeyPath:
+- (void)testDictionaryDictionaryForKeyPath
+{
+    NSDictionary *dict = [self sampleDictionaryForKeyPath];
+
     STAssertNil([dict dictionaryForKeyPath:@"level1.string"], nil);
     STAssertNil([dict dictionaryForKeyPath:@"level1.numString"], nil);
     STAssertNil([dict dictionaryForKeyPath:@"level1.doubleString"], nil);
@@ -156,6 +158,44 @@
     STAssertNil([dict dictionaryForKeyPath:@"level1.array"], nil);
     STAssertNotNil([dict dictionaryForKeyPath:@"level1.dict"], nil);
     STAssertEquals([[dict dictionaryForKeyPath:@"level1.dict"] count], (NSUInteger)2, nil);
+}
+
+- (NSDictionary *)sampleDictionary {
+    return @{
+             @"string": @"test string",
+             @"numString": @"123",
+             @"doubleString": @"123.456789012345",
+             @"num": @123,
+             @"array": @[@1,@2,@3],
+             @"dict": @{@"test1": @100, @"test2": @200}
+             };
+}
+
+- (NSDictionary *)sampleDictionaryForKeyPath {
+    return @{@"level1": @{
+                     @"level2": @{
+                             @"string": @"test string",
+                             @"numString": @"123",
+                             @"doubleString": @"123.456789012345",
+                             @"num": @123,
+                             @"array": @[@1,@2,@3],
+                             @"dict": @{@"test1": @100, @"test2": @200}
+                             },
+                     @"string": @"test string",
+                     @"doubleString": @"123.456789012345",
+                     @"numString": @"123",
+                     @"num": @123,
+                     @"array": @[@1,@2,@3],
+                     @"dict": @{@"test1": @100, @"test2": @200}
+                     },
+             @"string": @"test string",
+             @"doubleString": @"123.456789012345",
+             @"numString": @"123",
+             @"num": @123,
+             @"array": @[@1,@2,@3],
+             @"dict": @{@"test1": @100, @"test2": @200}
+             };
+
 }
 
 @end
