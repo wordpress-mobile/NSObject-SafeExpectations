@@ -15,3 +15,14 @@
 #define NSSEAssert(cond,desc,...) do {} while (0)
 #endif // NSSE_USE_ASSERTIONS
 
+@interface NSString (SafeExpectations)
++ (instancetype)se_stringWithObject:obj;
+@end
+
+@interface NSNumber (SafeExpectations)
++ (instancetype)se_numberWithObject:obj;
+@end
+
+@interface NSArray (SafeExpectations)
++ (instancetype)se_arrayWithObject:obj;
+@end

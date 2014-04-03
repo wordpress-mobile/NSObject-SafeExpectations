@@ -85,5 +85,6 @@
  */
 - (NSDictionary *)dictionaryForKeyPath:(id)keyPath;
 
++ (instancetype)se_dictionaryWithObject:obj;
 
 @end

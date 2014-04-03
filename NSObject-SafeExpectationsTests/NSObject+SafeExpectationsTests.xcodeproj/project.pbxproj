@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12B5DCD18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */; };
+		E12B5DCE18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */; };
+		E12B5DD018EDA5E700B8E15B /* NSObject+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */; };
+		E12B5DD118EDAA3200B8E15B /* NSObject+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */; };
 		E138A2E216C2A4F50038F6AD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1420E6C16C286E9008F1AB0 /* SenTestingKit.framework */; };
 		E138A2E416C2A4F50038F6AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E138A2E316C2A4F50038F6AD /* Cocoa.framework */; };
-		E138A2F116C2A4F50038F6AD /* NSObject_SafeExpectationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E138A2F016C2A4F50038F6AD /* NSObject_SafeExpectationsTest.m */; };
+		E138A2F116C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E138A2F016C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m */; };
 		E138A2F716C2A5BB0038F6AD /* NSDictionary+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = E1420E8016C295F8008F1AB0 /* NSDictionary+SafeExpectations.m */; };
-		E138A2F916C2AE690038F6AD /* NSObject_SafeExpectationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E138A2F016C2A4F50038F6AD /* NSObject_SafeExpectationsTest.m */; };
+		E138A2F916C2AE690038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E138A2F016C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m */; };
 		E1420E6D16C286E9008F1AB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1420E6C16C286E9008F1AB0 /* SenTestingKit.framework */; };
 		E1420E6F16C286E9008F1AB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1420E6E16C286E9008F1AB0 /* UIKit.framework */; };
 		E1420E7116C286E9008F1AB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1420E7016C286E9008F1AB0 /* Foundation.framework */; };
@@ -19,14 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_SafeExpectations_Test.m; sourceTree = "<group>"; };
+		E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeExpectations.m"; sourceTree = "<group>"; };
 		E138A2E116C2A4F50038F6AD /* NSObject+SafeExpectationsTest_OSX.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSObject+SafeExpectationsTest_OSX.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E138A2E316C2A4F50038F6AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E138A2E616C2A4F50038F6AD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E138A2E716C2A4F50038F6AD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E138A2E816C2A4F50038F6AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E138A2EB16C2A4F50038F6AD /* NSObject+SafeExpectationsTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NSObject+SafeExpectationsTest-Info.plist"; sourceTree = "<group>"; };
-		E138A2EF16C2A4F50038F6AD /* NSObject_SafeExpectationsTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_SafeExpectationsTest.h; sourceTree = "<group>"; };
-		E138A2F016C2A4F50038F6AD /* NSObject_SafeExpectationsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_SafeExpectationsTest.m; sourceTree = "<group>"; };
+		E138A2F016C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_SafeExpectations_Test.m; sourceTree = "<group>"; };
 		E1420E6916C286E9008F1AB0 /* NSObject-SafeExpectationTest_iOS.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "NSObject-SafeExpectationTest_iOS.octest"; path = "NSObject+SafeExpectationTest_iOS.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1420E6C16C286E9008F1AB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E1420E6E16C286E9008F1AB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -72,8 +77,8 @@
 		E138A2E916C2A4F50038F6AD /* NSObject+SafeExpectationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E138A2EF16C2A4F50038F6AD /* NSObject_SafeExpectationsTest.h */,
-				E138A2F016C2A4F50038F6AD /* NSObject_SafeExpectationsTest.m */,
+				E138A2F016C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m */,
+				E12B5DCC18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m */,
 			);
 			name = "NSObject+SafeExpectationsTests";
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 		E1420E5D16C28672008F1AB0 = {
 			isa = PBXGroup;
 			children = (
+				E12B5DCF18EDA5E700B8E15B /* NSObject+SafeExpectations.m */,
 				E1420E8216C29DC8008F1AB0 /* NSObject+SafeExpectations.h */,
 				E1420E7F16C295F8008F1AB0 /* NSDictionary+SafeExpectations.h */,
 				E1420E8016C295F8008F1AB0 /* NSDictionary+SafeExpectations.m */,
@@ -237,8 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E138A2F116C2A4F50038F6AD /* NSObject_SafeExpectationsTest.m in Sources */,
+				E138A2F116C2A4F50038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */,
 				E138A2F716C2A5BB0038F6AD /* NSDictionary+SafeExpectations.m in Sources */,
+				E12B5DCE18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */,
+				E12B5DD118EDAA3200B8E15B /* NSObject+SafeExpectations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1420E8116C295F8008F1AB0 /* NSDictionary+SafeExpectations.m in Sources */,
-				E138A2F916C2AE690038F6AD /* NSObject_SafeExpectationsTest.m in Sources */,
+				E138A2F916C2AE690038F6AD /* NSDictionary_SafeExpectations_Test.m in Sources */,
+				E12B5DCD18EDA4F600B8E15B /* NSObject_SafeExpectations_Test.m in Sources */,
+				E12B5DD018EDA5E700B8E15B /* NSObject+SafeExpectations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,34 +7,28 @@
 //
 
 #import "NSDictionary+SafeExpectations.h"
-
-@interface NSDictionary (SafeExpectations_Private)
-- (NSString *)stringWithObject:(id)obj;
-- (NSNumber *)numberWithObject:(id)obj;
-- (NSArray *)arrayWithObject:(id)obj;
-- (NSDictionary *)dictionaryWithObject:(id)obj;
-@end
+#import "NSObject+SafeExpectations.h"
 
 @implementation NSDictionary (SafeExpectations)
 
 - (NSString *)stringForKey:(id)key {
     id obj = [self safeObjectForKey:key];
-    return [self stringWithObject:obj];
+    return [NSString se_stringWithObject:obj];
 }
 
 - (NSNumber *)numberForKey:(id)key {
     id obj = [self safeObjectForKey:key];
-    return [self numberWithObject:obj];
+    return [NSNumber se_numberWithObject:obj];
 }
 
 - (NSArray *)arrayForKey:(id)key {
     id obj = [self safeObjectForKey:key];
-    return [self arrayWithObject:obj];
+    return [NSArray se_arrayWithObject:obj];
 }
 
 - (NSDictionary *)dictionaryForKey:(id)key {
     id obj = [self safeObjectForKey:key];
-    return [self dictionaryWithObject:obj];
+    return [NSDictionary se_dictionaryWithObject:obj];
 }
 
 - (id)safeObjectForKey:(id)key {
@@ -59,66 +53,26 @@
 
 - (NSString *)stringForKeyPath:(id)keyPath {
     id obj = [self objectForKeyPath:keyPath];
-    return [self stringWithObject:obj];
+    return [NSString se_stringWithObject:obj];
 
 }
 
 - (NSNumber *)numberForKeyPath:(id)keyPath {
     id obj = [self objectForKeyPath:keyPath];
-    return [self numberWithObject:obj];
+    return [NSNumber se_numberWithObject:obj];
 }
 
 - (NSArray *)arrayForKeyPath:(id)keyPath {
     id obj = [self objectForKeyPath:keyPath];
-    return [self arrayWithObject:obj];
+    return [NSArray se_arrayWithObject:obj];
 }
 
 - (NSDictionary *)dictionaryForKeyPath:(id)keyPath {
     id obj = [self objectForKeyPath:keyPath];
-    return [self dictionaryWithObject:obj];
+    return [NSDictionary se_dictionaryWithObject:obj];
 }
 
-@end
-
-@implementation NSDictionary (SafeExpectations_Private)
-
-- (NSString *)stringWithObject:(id)obj {
-    NSString *string = obj;
-
-    if (![string isKindOfClass:[NSString class]] && [string respondsToSelector:@selector(stringValue)])
-        string = [string performSelector:@selector(stringValue)];
-
-    if (![string isKindOfClass:[NSString class]])
-        string = nil;
-
-    return string;
-}
-
-- (NSNumber *)numberWithObject:(id)obj {
-    NSNumber *number = obj;
-
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"C"]];
-    if ([number isKindOfClass:[NSString class]])
-        number = [formatter numberFromString:(NSString *)number];
-
-    if (![number isKindOfClass:[NSNumber class]])
-        number = nil;
-
-    return number;
-}
-
-- (NSArray *)arrayWithObject:(id)obj {
-    NSArray *array = obj;
-
-    if (![array isKindOfClass:[NSArray class]]) {
-        array = nil;
-    }
-
-    return array;
-}
-
-- (NSDictionary *)dictionaryWithObject:(id)obj {
++ (instancetype)se_dictionaryWithObject:(id)obj {
     NSDictionary *dictionary = obj;
 
     if (![dictionary isKindOfClass:[NSDictionary class]]) {

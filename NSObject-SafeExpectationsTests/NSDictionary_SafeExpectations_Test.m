@@ -6,10 +6,14 @@
 //
 //
 
-#import "NSObject_SafeExpectationsTest.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "NSObject+SafeExpectations.h"
 
-@implementation NSObject_SafeExpectationsTest_OSX
+@interface NSDictionary_SafeExpectations_Test : SenTestCase
+
+@end
+
+@implementation NSDictionary_SafeExpectations_Test
 
 - (void)setUp
 {
