@@ -98,6 +98,7 @@
     NSNumber *number = obj;
 
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"C"]];
     if ([number isKindOfClass:[NSString class]])
         number = [formatter numberFromString:(NSString *)number];
 
