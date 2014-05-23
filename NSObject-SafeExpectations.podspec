@@ -7,4 +7,5 @@ Pod::Spec.new do |s|
   s.author       = { "Jorge Bernal" => "jbernal@gmail.com" }
   s.source       = { :git => "https://github.com/koke/NSObject-SafeExpectations.git", :tag => "0.0.1" }
   s.source_files = '*.{h,m}'
+  s.requires_arc = 'yes'
 end
