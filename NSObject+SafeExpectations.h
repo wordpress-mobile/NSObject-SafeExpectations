@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSString+SafeExpectations.h"
+#import "NSNumber+SafeExpectations.h"
+#import "NSArray+SafeExpectations.h"
 #import "NSDictionary+SafeExpectations.h"
 
 #if !defined(NSSE_USE_ASSERTIONS)
@@ -14,4 +17,3 @@
 #else
 #define NSSEAssert(cond,desc,...) do {} while (0)
 #endif // NSSE_USE_ASSERTIONS
-
