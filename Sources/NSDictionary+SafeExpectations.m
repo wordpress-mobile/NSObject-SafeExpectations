@@ -1,11 +1,3 @@
-//
-//  NSDictionary+SafeExpectations.m
-//  NSObject-SafeExpectationsTests
-//
-//  Created by Jorge Bernal on 2/6/13.
-//
-//
-
 #import "NSDictionary+SafeExpectations.h"
 
 @interface NSDictionary (SafeExpectations_Private)
@@ -38,7 +30,7 @@
 }
 
 - (id)safeObjectForKey:(id)key {
-    NSSEAssert(key != nil, @"nil key");
+    NSAssert(key != nil, @"nil key");
     return [self objectForKey:key];
 }
 
@@ -98,6 +90,7 @@
     NSNumber *number = obj;
 
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"C"]];
     if ([number isKindOfClass:[NSString class]])
         number = [formatter numberFromString:(NSString *)number];
 

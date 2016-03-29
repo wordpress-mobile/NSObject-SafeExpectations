@@ -1,12 +1,4 @@
-//
-//  NSDictionary+SafeExpectations.h
-//  NSObject-SafeExpectationsTests
-//
-//  Created by Jorge Bernal on 2/6/13.
-//
-//
-
-#import "NSObject+SafeExpectations.h"
+#import <Foundation/Foundation.h>
 
 /**
  Additions to NSDictionary
