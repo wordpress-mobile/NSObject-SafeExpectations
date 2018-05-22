@@ -39,6 +39,8 @@
 		E1A598151CAAC1CC0047815E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A598171CAAC1CC0047815E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A598181CAAC1CC0047815E /* SafeExpectationsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeExpectationsTests.m; sourceTree = "<group>"; };
+		FFA3989D20B48AA600B142F4 /* NSObject-SafeExpectations.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSObject-SafeExpectations.podspec"; sourceTree = "<group>"; };
+		FFA3989E20B48AA600B142F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,8 @@
 		E1A597D01CAABEBF0047815E = {
 			isa = PBXGroup;
 			children = (
+				FFA3989D20B48AA600B142F4 /* NSObject-SafeExpectations.podspec */,
+				FFA3989E20B48AA600B142F4 /* README.md */,
 				E1A598101CAAC1CC0047815E /* Sources */,
 				E1A598141CAAC1CC0047815E /* Support */,
 				E1A598161CAAC1CC0047815E /* Tests */,
@@ -635,6 +639,7 @@
 				E1A597EF1CAABEFB0047815E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1A5980A1CAABF200047815E /* Build configuration list for PBXNativeTarget "SafeExpectations-Mac" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +648,7 @@
 				E1A5980C1CAABF200047815E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1A5980D1CAABF200047815E /* Build configuration list for PBXNativeTarget "SafeExpectationsTests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +657,7 @@
 				E1A5980F1CAABF200047815E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
