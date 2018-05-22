@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1A597DB1CAABEFB0047815E"
-               BuildableName = "SafeExpectations-iOS.framework"
+               BuildableName = "SafeExpectations.framework"
                BlueprintName = "SafeExpectations-iOS"
                ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E1A598011CAABF200047815E"
+               BuildableName = "SafeExpectationsTests.xctest"
+               BlueprintName = "SafeExpectationsTests"
+               ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E1A597DB1CAABEFB0047815E"
+            BuildableName = "SafeExpectations.framework"
+            BlueprintName = "SafeExpectations-iOS"
+            ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A597DB1CAABEFB0047815E"
-            BuildableName = "SafeExpectations-iOS.framework"
+            BuildableName = "SafeExpectations.framework"
             BlueprintName = "SafeExpectations-iOS"
             ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
          </BuildableReference>
@@ -64,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A597DB1CAABEFB0047815E"
-            BuildableName = "SafeExpectations-iOS.framework"
+            BuildableName = "SafeExpectations.framework"
             BlueprintName = "SafeExpectations-iOS"
             ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
          </BuildableReference>

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1A597F81CAABF200047815E"
-               BuildableName = "SafeExpectations-Mac.framework"
+               BuildableName = "SafeExpectations.framework"
                BlueprintName = "SafeExpectations-Mac"
                ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A597F81CAABF200047815E"
-            BuildableName = "SafeExpectations-Mac.framework"
+            BuildableName = "SafeExpectations.framework"
             BlueprintName = "SafeExpectations-Mac"
             ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A597F81CAABF200047815E"
-            BuildableName = "SafeExpectations-Mac.framework"
+            BuildableName = "SafeExpectations.framework"
             BlueprintName = "SafeExpectations-Mac"
             ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A597F81CAABF200047815E"
-            BuildableName = "SafeExpectations-Mac.framework"
+            BuildableName = "SafeExpectations.framework"
             BlueprintName = "SafeExpectations-Mac"
             ReferencedContainer = "container:NSObject-SafeExpectations.xcodeproj">
          </BuildableReference>
