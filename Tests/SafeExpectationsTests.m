@@ -43,7 +43,9 @@
     XCTAssertEqualObjects([dict numberForKey:@"numString"], @123);
     XCTAssertEqualObjects([dict numberForKey:@"doubleString"], @123.456789012345);
     XCTAssertEqualObjects([dict numberForKey:@"doubleWithOtherLocaleString"], nil);
-    
+    NSNumberFormatter *frenchFormatter = [[NSNumberFormatter alloc] init];
+    [frenchFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"fr-fr"]];
+    XCTAssertEqualObjects([dict numberForKey:@"doubleWithOtherLocaleString" usingFormatter:frenchFormatter], @123.456789012345);
     XCTAssertEqualObjects([dict numberForKey:@"num"], @123);
 
     // arrayForKey:
