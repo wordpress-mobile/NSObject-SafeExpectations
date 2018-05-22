@@ -1,3 +1,5 @@
 language: objective-c
 xcode_project: NSObject-SafeExpectations.xcodeproj
 xcode_scheme: SafeExpectations-iOS
+script:
+- set -o pipefail && xcodebuild build test -project NSObject-SafeExpectations.xcodeproj -scheme SafeExpectations-iOS  -sdk iphonesimulator  -destination "name=iPhone 7" ONLY_ACTIVE_ARCH=NO | xcpretty -c
