@@ -13,6 +13,7 @@
                            @"string": @"test string",
                            @"numString": @"123",
                            @"doubleString": @"123.456789012345",
+                           @"doubleWithOtherLocaleString": @"123,456789012345",
                            @"num": @123,
                            @"array": @[@1,@2,@3],
                            @"dict": @{@"test1": @100, @"test2": @200}
@@ -41,6 +42,8 @@
 
     XCTAssertEqualObjects([dict numberForKey:@"numString"], @123);
     XCTAssertEqualObjects([dict numberForKey:@"doubleString"], @123.456789012345);
+    XCTAssertEqualObjects([dict numberForKey:@"doubleWithOtherLocaleString"], nil);
+    
     XCTAssertEqualObjects([dict numberForKey:@"num"], @123);
 
     // arrayForKey:

@@ -87,17 +87,19 @@
 }
 
 - (NSNumber *)numberWithObject:(id)obj {
-    NSNumber *number = obj;
 
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"C"]];
-    if ([number isKindOfClass:[NSString class]])
-        number = [formatter numberFromString:(NSString *)number];
+    if ([obj isKindOfClass:[NSNumber class]]) {
+        return (NSNumber *)obj;
+    }
 
-    if (![number isKindOfClass:[NSNumber class]])
-        number = nil;
+    if ([obj isKindOfClass:[NSString class]]) {
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+        NSNumber *number = [formatter numberFromString:(NSString *)obj];
+        return number;
+    }
 
-    return number;
+    return nil;
 }
 
 - (NSArray *)arrayWithObject:(id)obj {
