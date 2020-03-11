@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSObject-SafeExpectations"
-  s.version      = "0.0.4-beta.1"
+  s.version      = "0.0.4"
   s.summary      = "No more crashes getting unexpected values from a NSDictionary."
   s.homepage     = "https://github.com/wordpress-mobile/NSObject-SafeExpectations"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
