@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-PODSPEC_PATH="wpxmlrpc.podspec"
+PODSPEC_PATH="NSObject-SafeExpectations.podspec"
 SLACK_WEBHOOK=$PODS_SLACK_WEBHOOK
 
 echo "--- :rubygems: Setting up Gems"
