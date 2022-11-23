@@ -15,5 +15,9 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "11.0"
   
   s.source        = { :git => "https://github.com/wordpress-mobile/NSObject-SafeExpectations.git", :tag => s.version.to_s }
-  s.source_files  = 'Sources/*.{h,m}'
+  s.source_files  = 'Sources/NSObject-SafeExpectations/*.{h,m}'
+
+  s.test_spec do |test|
+    test.source_files = 'Tests/AllTests/*.{h,m}'
+  end
 end
