@@ -1,5 +1,6 @@
 @import XCTest;
-#import <SafeExpectations/SafeExpectations.h>
+
+#import "NSDictionary+SafeExpectations.h"
 
 @interface SafeExpectationsTests : XCTestCase
 
