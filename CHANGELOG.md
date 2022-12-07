@@ -38,7 +38,7 @@ _None._
 
 ### New Features
 
-- Add nullability annotation [#14]
+_None._
 
 ### Bug Fixes
 
@@ -47,6 +47,12 @@ _None._
 ### Internal Changes
 
 _None._
+
+## [0.0.6](https://github.com/wordpress-mobile/NSObject-SafeExpectations/releases/tag/0.0.6)
+
+### New Features
+
+- Add nullability annotation [#14]
 
 ## [0.0.5](https://github.com/wordpress-mobile/NSObject-SafeExpectations/releases/tag/0.0.5)
 
