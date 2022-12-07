@@ -38,7 +38,7 @@ _None._
 
 ### New Features
 
-_None._
+- Add nullability annotation [#14]
 
 ### Bug Fixes
 
